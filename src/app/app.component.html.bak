@@ -1,0 +1,52 @@
+<!--The whole content below can be removed with the new code.-->
+<md-toolbar color="primary">
+  Event Space Finder
+</md-toolbar>
+<md-grid-list cols="4">
+  <md-grid-tile colspan=3>
+    <md-card>
+      <img md-card-image src="#">
+      <md-card-header>
+        <md-card-title><label>Space:</label> West Room</md-card-title>
+        <md-card-title><label>Capacity:</label> 60 people</md-card-title>
+        <md-card-subtitle>Google</md-card-subtitle>
+        <md-card-subtitle>111 9th ave</md-card-subtitle>
+      </md-card-header>
+      <md-card-content>
+
+        <md-grid-list cols="2">
+          <md-grid-tile>
+            <p>Recording capabilities: yes</p>
+            <p>Breakout room: no</p>
+          </md-grid-tile>
+          <md-grid-tile>
+            <p><label>Contact:</label></p>
+            <p>John Doe</p>
+            <p>john@doe.com</p>
+            <p>212-222-5454</p>
+          </md-grid-tile>
+          <md-grid-tile>
+            <p><label>Notes: </label></p>
+            <p> ipsum dolorem kale alfafa
+              bla bla bla blab alb bal </p>
+          </md-grid-tile>
+          <md-grid-tile>
+            <p><label>Security Process:</label></p>
+            <p> ipsum dolorem kale alfafa
+              bla bla bla blab alb bal </p>
+          </md-grid-tile>
+        </md-grid-list>
+
+      </md-card-content>
+      <md-card-actions>
+        <button md-button color="primary">Edit</button>
+      </md-card-actions>
+    </md-card>
+  </md-grid-tile>
+
+  <md-grid-tile colspan=1>
+    <md-input-container>
+      <input mdInput placeholder="Search">
+    </md-input-container>
+  </md-grid-tile>
+</md-grid-list>

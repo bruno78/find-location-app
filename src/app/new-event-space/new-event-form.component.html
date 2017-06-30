@@ -1,0 +1,59 @@
+<form>
+  <md-card>
+    <img md-card-image src="#">
+    <md-card-header>
+      <md-grid-list cols="2">
+        <div class="col l6">
+          <md-input-container>
+            <md-card-title><input mdInput placeholder="Space"></md-card-title>
+          </md-input-container>
+        </div>
+        <div class="col l6">
+          <md-input-container>
+            <md-card-title><input mdInput placeholder="Capcity"></md-card-title>
+          </md-input-container>
+        </div>
+        <div class="col l12">
+          <md-input-container>
+            <md-card-subtitle><input mdInput placeholder="Location"></md-card-subtitle>
+          </md-input-container>
+          <md-input-container>
+            <md-card-subtitle><input mdInput placeholder="Address"></md-card-subtitle>
+          </md-input-container>                
+        </div>
+      </md-grid-list>
+    </md-card-header>
+    <md-card-content>
+        <div>
+          <p><md-slide-toggle>Recording Capabilities</md-slide-toggle></p>
+          <p><md-slide-toggle>Breakout Room</md-slide-toggle></p>
+        </div>
+        <div>
+          <p><label>Contact:</label></p>
+          <md-input-container>
+            <p><input mdInput placeholder="Name"></p>
+          </md-input-container>
+          <md-input-container>
+            <p><input mdInput placeholder="Email"></p>
+          </md-input-container>
+          <md-input-container>
+            <p><input mdInput placeholder="Phone number"></p>
+          </md-input-container>
+        </div>
+        <div>
+          <md-input-container>
+            <p><textarea mdInput placeholder="Notes"></textarea></p>
+          </md-input-container>
+        </div>
+        <div>
+          <md-input-container>
+            <p><textarea mdInput placeholder="Security Process"></textarea></p>
+          </md-input-container>
+        </div>
+    </md-card-content>
+    <md-card-actions>
+      <button md-raised-button color="primary" (click)="save()">Save</button>
+      <button md-raised-button color="accent" (click)="cancel()">Cancel</button>
+    </md-card-actions>
+  </md-card>
+</form>

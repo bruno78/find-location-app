@@ -1,0 +1,98 @@
+<!--The whole content below can be removed with the new code.-->
+<md-toolbar color="primary">
+  Event Space Finder
+</md-toolbar>
+<div *ngIf="!idEdit">
+  <div class="row">
+    <div class="col l10">
+      <md-card>
+        <img md-card-image src="#">
+        <md-card-header>
+          <div class="row">
+            <div class="col l6">
+              <md-card-title><label>Space:</label> West Room</md-card-title>
+            </div>
+            <div class="col l6">
+              <md-card-title><label>Capacity:</label> 60 people</md-card-title>
+            </div>
+            <div class="col l12">
+              <md-card-subtitle>Google</md-card-subtitle>
+              <md-card-subtitle>111 9th ave</md-card-subtitle>
+            </div>
+          </div>
+        </md-card-header>
+        <md-card-content>
+            <div>
+              <p>Recording capabilities: yes</p>
+              <p>Breakout room: no</p>
+            </div>
+            <div>
+              <p><label>Contact:</label></p>
+              <p>John Doe</p>
+              <p>john@doe.com</p>
+              <p>212-222-5454</p>
+            </div>
+            <div>
+              <p><label>Notes: </label></p>
+              <p> ipsum dolorem kale alfafa
+                bla bla bla blab alb bal </p>
+            </div>
+            <div>
+              <p><label>Security Process:</label></p>
+              <p> ipsum dolorem kale alfafa
+                bla bla bla blab alb bal </p>
+            </div>
+        </md-card-content>
+        <md-card-actions>
+          <button md-button color="primary" (click)="edit()">Edit</button>
+        </md-card-actions>
+      </md-card>
+    </div>
+    <div class="col l2">
+      <md-input-container>
+        <input mdInput placeholder="Search">
+      </md-input-container>
+     </div>
+  </div>
+</div>
+
+
+<div *ngIf="isEdit">
+  <form class="example-form">
+  <md-input-container class="example-full-width">
+    <input mdInput placeholder="Location">
+  </md-input-container>
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><md-input-container class="example-full-width">
+      <input mdInput placeholder="First name">
+    </md-input-container></td>
+    <td><md-input-container class="example-full-width">
+      <input mdInput placeholder="Long Last Name That Will Be Truncated">
+    </md-input-container></td>
+  </tr></table>
+
+  <p>
+    <md-input-container class="example-full-width">
+      <textarea mdInput placeholder="Address">1600 Amphitheatre Pkwy</textarea>
+    </md-input-container>
+    <md-input-container class="example-full-width">
+      <textarea mdInput placeholder="Address 2"></textarea>
+    </md-input-container>
+  </p>
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><md-input-container class="example-full-width">
+      <input mdInput placeholder="City">
+    </md-input-container></td>
+    <td><md-input-container class="example-full-width">
+      <input mdInput placeholder="State">
+    </md-input-container></td>
+    <td><md-input-container class="example-full-width">
+      <input mdInput #postalCode maxlength="5" placeholder="Postal Code" value="94043">
+      <md-hint align="end">{{postalCode.value.length}} / 5</md-hint>
+    </md-input-container></td>
+  </tr></table>
+</form>
+</div>
+    
